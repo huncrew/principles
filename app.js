@@ -14,7 +14,7 @@ const errorHandlingMiddleware = require('./middleware/error_handling');
 require('dotenv').config() 
 
 //middleware
-// app.use(express.static(path.resolve(__dirname, './client/build')));
+app.use(express.static(path.resolve(__dirname, './client/build')));
 app.use(express.urlencoded({ extended: false }));
 app.use(jsonParser);
 
@@ -26,9 +26,9 @@ app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/principles', principleRoutes);
 
 // get
-// app.get('*', (req, res) => {
-//     res.sendFile(path.resolve(__dirname, './client/public', 'index.html'));
-// });
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './client/public', 'index.html'));
+});
 
 //middleware errors
 app.use(pageNotFound);
