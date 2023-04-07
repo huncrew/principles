@@ -1,4 +1,4 @@
-const UserModel = require('../models/User');
+const UserModel = require('../models/user');
 const {BadRequestError, UnauthenticatedError} = require('../errors');
 
 const register = async (req, res, next) => {
