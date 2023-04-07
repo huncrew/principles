@@ -49,7 +49,7 @@ const jobSlice = createSlice({
     },
     [createJob.fulfilled]: (state) => {
       state.isLoading = false;
-      toast.success('Job Created');
+      toast.success('Principle Created');
     },
     [createJob.rejected]: (state, { payload }) => {
       state.isLoading = false;
