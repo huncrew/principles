@@ -30,7 +30,7 @@ const Job = ({
         <footer>
           <div className='actions'>
             <Link
-              to='/add-job'
+              to='/add-principle'
               className='btn edit-btn'
               onClick={() =>
                 dispatch(
