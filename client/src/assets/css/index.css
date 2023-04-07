@@ -82,6 +82,11 @@ p {
   max-width: 40em;
 }
 
+span {
+  color: red;
+}
+
+
 h1,
 h2,
 h3,
@@ -148,7 +153,7 @@ ul {
 .btn {
   cursor: pointer;
   color: var(--white);
-  background: var(--primary-500);
+  background: red;
   border: transparent;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
@@ -163,11 +168,11 @@ ul {
   box-shadow: var(--shadow-3);
 }
 .btn-hipster {
-  color: var(--primary-500);
+  color: red;
   background: var(--primary-200);
 }
 .btn-hipster:hover {
-  color: var(--primary-200);
+  color: light var(--red-light);
   background: var(--primary-700);
 }
 .btn-block {
@@ -269,7 +274,7 @@ ul {
   height: 6rem;
   border: 5px solid var(--grey-400);
   border-radius: 50%;
-  border-top-color: var(--primary-500);
+  border-top-color: red;
   animation: spinner 2s linear infinite;
 }
 .loading-center {
@@ -282,7 +287,7 @@ ul {
 }
 
 .title-underline {
-  background: var(--primary-500);
+  background: red;
   width: 7rem;
   height: 0.25rem;
   margin: 0 auto;
@@ -308,7 +313,7 @@ ul {
   display: block;
 }
 .coffee-info a {
-  color: var(--primary-500);
+  color: red;
 }
 
 @media screen and (min-width: 992px) {

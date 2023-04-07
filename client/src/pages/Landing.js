@@ -12,12 +12,12 @@ const Landing = () => {
         {/* info */}
         <div className='info'>
           <h1>
-            job <span>tracking</span> app
+            <span>Principles</span> app
           </h1>
           <p>
-            Crucifix narwhal street art asymmetrical, humblebrag tote bag pop-up
-            fixie raclette taxidermy craft beer. Brunch bitters synth, VHS
-            crucifix heirloom meggings bicycle rights.
+            Principles allow us to to avoid making the same mistakes twice, by compiling our life lessons,
+            and being able to review them when we meet situations and need to make decisions.
+            This app tracks your principles.  
           </p>
           <Link to='/register' className='btn btn-hero'>
             Login/Register

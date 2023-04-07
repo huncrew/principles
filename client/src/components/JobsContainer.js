@@ -33,7 +33,7 @@ const JobsContainer = () => {
   if (jobs.length === 0 || jobs.length === undefined) {
     return (
       <Wrapper>
-        <h2>No jobs to display...</h2>
+        <h2>You haven't added any principles yet, click 'Add Principles' to do it!</h2>
       </Wrapper>
     );
   }
