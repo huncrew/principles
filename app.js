@@ -12,6 +12,7 @@ const databaseConnect = require('./db/connect');
 const pageNotFound = require('./middleware/not_found');
 const errorHandlingMiddleware = require('./middleware/error_handling');
 require('dotenv').config() 
+const sendEmail = require('./controllers/email');
 
 //middleware
 app.use(express.static(path.resolve(__dirname, './client/build')));
@@ -25,7 +26,8 @@ app.use(addToReq);
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/principles', principleRoutes);
 
-// get
+app.get('/send', sendEmail);
+
 app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, './client/public', 'index.html'));
 });
